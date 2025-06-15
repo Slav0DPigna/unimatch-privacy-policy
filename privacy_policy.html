@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informativa sulla Privacy - Unimatch Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Informativa sulla Privacy - Unimatch Bot</h1>
+        <p>Ultimo aggiornamento: 15 Giugno 2025</p>
+        <p>Benvenuto su Unimatch Bot, un servizio di messaggistica anonima offerto tramite Telegram. La tua privacy è importante per noi. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo, conserviamo e proteggiamo le tue informazioni quando utilizzi il nostro Bot.</p>
+
+        <h2>1. Informazioni Raccolte</h2>
+        <p>Raccogliamo le seguenti informazioni per fornire e migliorare il nostro servizio:</p>
+        <ul>
+            <li><strong>Identificativo Utente Telegram (User ID):</strong> Un identificativo unico fornito da Telegram per ciascun utente, utilizzato per gestire le connessioni, le statistiche e le segnalazioni.</li>
+            <li><strong>Nome Utente o Nome Visualizzato:</strong> Utilizzato solo per personalizzare i messaggi di benvenuto (es. "Ciao [Nome]").</li>
+            <li><strong>Statistiche di Utilizzo:</strong> Raccogliamo dati sulle tue interazioni con il Bot, come il numero di messaggi inviati e le connessioni effettuate, per generare statistiche personali e globali.</li>
+            <li><strong>Segnalazioni:</strong> Registriamo informazioni relative alle segnalazioni effettuate o ricevute, inclusi timestamp e ID degli utenti coinvolti, per garantire un ambiente sicuro.</li>
+            <li><strong>Messaggi:</strong> I contenuti dei messaggi (testo, foto, video, ecc.) vengono temporaneamente elaborati per l'inoltro anonimo tra gli utenti connessi. Non conserviamo i contenuti dei messaggi dopo la loro trasmissione, salvo per il collegamento temporaneo tra messaggi originali e inoltrati per gestire risposte e modifiche.</li>
+        </ul>
+
+        <h2>2. Come Utilizziamo le Informazioni</h2>
+        <p>Utilizziamo le informazioni raccolte per:</p>
+        <ul>
+            <li>Facilitare le connessioni anonime tra utenti.</li>
+            <li>Gestire le funzionalità del Bot, come l'inoltro di messaggi, la gestione delle code e la modifica dei messaggi.</li>
+            <li>Monitorare e prevenire comportamenti inappropriati attraverso il sistema di segnalazioni e ban temporanei.</li>
+            <li>Fornire statistiche personali e globali agli utenti.</li>
+            <li>Mantenere lo stato del Bot (es. connessioni attive, coda di ricerca) attraverso il salvataggio su file locale.</li>
+        </ul>
+
+        <h2>3. Conservazione dei Dati</h2>
+        <p>Conserviamo i dati nei seguenti modi:</p>
+        <ul>
+            <li><strong>Dati di Stato:</strong> Informazioni come connessioni, statistiche e segnalazioni vengono salvate in un file locale (<code>unimatch_bot_state.pkl</code>) per garantire la continuità del servizio. Questi dati sono mantenuti per tutto il tempo in cui il Bot è attivo, ma le segnalazioni più vecchie di 7 giorni vengono automaticamente eliminate.</li>
+            <li><strong>Messaggi:</strong> I contenuti dei messaggi non vengono archiviati permanentemente. I collegamenti temporanei tra messaggi (per gestire risposte e modifiche) vengono eliminati quando la chat termina.</li>
+            <li><strong>Ban Temporanei:</strong> I dati relativi ai ban temporanei (ID utente e timestamp di fine ban) vengono conservati solo per la durata del ban (2 giorni).</li>
+        </ul>
+
+        <h2>4. Condivisione dei Dati</h2>
+        <p>Non condividiamo i tuoi dati personali con terze parti, ad eccezione di quanto segue:</p>
+        <ul>
+            <li><strong>Telegram:</strong> Il Bot opera tramite l'API di Telegram, quindi alcune informazioni (es. User ID, messaggi) sono elaborate tramite i server di Telegram. Ti consigliamo di leggere l'<a href="https://telegram.org/privacy">Informativa sulla Privacy di Telegram</a> per maggiori dettagli.</li>
+            <li><strong>Partner di Chat:</strong> I contenuti dei tuoi messaggi (testo, media, ecc.) vengono inoltrati in modo anonimo al tuo partner di chat. Il tuo User ID o altre informazioni personali non vengono mai rivelati.</li>
+        </ul>
+
+        <h2>5. Sicurezza dei Dati</h2>
+        <p>Adottiamo misure per proteggere i tuoi dati, tra cui:</p>
+        <ul>
+            <li>Crittografia dei dati trasmessi tramite Telegram.</li>
+            <li>Limitazione dell'accesso al file di stato del Bot (<code>unimatch_bot_state.pkl</code>) all'ambiente di esecuzione del Bot.</li>
+            <li>Eliminazione automatica delle segnalazioni più vecchie di 7 giorni e dei dati relativi ai ban scaduti.</li>
+        </ul>
+        <p>Tuttavia, nessun sistema è completamente sicuro. Ti invitiamo a non condividere informazioni personali sensibili durante le chat.</p>
+
+        <h2>6. I Tuoi Diritti</h2>
+        <p>Hai il diritto di:</p>
+        <ul>
+            <li>Accedere alle tue statistiche personali tramite il comando <code>/stats</code>.</li>
+            <li>Verificare il numero di segnalazioni ricevute tramite il comando <code>/myreports</code>.</li>
+            <li>Richiedere la rimozione dei tuoi dati contattando l'amministratore del Bot. Nota che l'eliminazione dei dati potrebbe non essere immediata a causa della natura anonima del servizio.</li>
+        </ul>
+
+        <h2>7. Regole di Utilizzo e Segnalazioni</h2>
+        <p>Per mantenere un ambiente sicuro, il Bot include un sistema di segnalazioni:</p>
+        <ul>
+            <li>Puoi segnalare un partner di chat inappropriato tramite il comando <code>/report</code> (limite: 1 segnalazione al giorno).</li>
+            <li>Gli utenti che ricevono 5 o più segnalazioni in 7 giorni vengono bannati temporaneamente per 2 giorni.</li>
+            <li>I dati relativi alle segnalazioni vengono conservati per un massimo di 7 giorni.</li>
+        </ul>
+
+        <h2>8. Modifiche all'Informativa</h2>
+        <p>Potremmo aggiornare questa Informativa sulla Privacy periodicamente. Le modifiche saranno comunicate agli utenti tramite un messaggio del Bot o aggiornando la data di "Ultimo aggiornamento" in cima a questa pagina.</p>
+
+        <h2>9. Contatti</h2>
+        <p>Per domande o richieste relative alla privacy, contatta l'amministratore a questo indirizzo mail : cicciocane1899@gmail.com </p>
+
+        <div class="footer">
+            <p>&copy; 2025 Unimatch Bot. Tutti i diritti riservati.</p>
+        </div>
+    </div>
+</body>
+</html>
